@@ -25,3 +25,4 @@ touch server.js     # creates application startup file (entry point)
 
 mkdir config controllers middleware models routes utils
 touch config/db.js
+touch .env

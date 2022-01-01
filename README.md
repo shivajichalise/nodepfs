@@ -2,6 +2,28 @@
 
 a simple bash script that creates a folder structure that I prefer for a nodejs project.
 
+## Folder Structure example:
+
+```
+projectName
+|   .env
+|   server.js
+|
+|---config
+|   |   db.js
+|
+|---controllers
+|
+|---middleware
+|
+|---models
+|
+|---routes
+|
+|---utils
+
+```
+
 ## Installing
 
 For the current user:
