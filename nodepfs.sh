@@ -1,0 +1,27 @@
+#        _       _                _      
+#       | |     | |              (_)     
+#   __ _| |_ __ | |__   __ ___  ___ _ __ 
+#  / _` | | '_ \| '_ \ / _` \ \/ / | '__| Shivaji Chalise (alphajr)
+# | (_| | | |_) | | | | (_| |>  <| | |    http://www.github.com/shivajichalise
+#  \__,_|_| .__/|_| |_|\__,_/_/\_\ |_|   
+#         | |                   _/ |     
+#         |_|                  |__/      
+#
+# Creates a folder structure for a nodejs app (the folder structure that I normally use)
+
+#!/bin/sh
+
+if [[ -z $1 ]]; then
+  echo -n "Enter Project Name: "  
+  read projectName
+else
+  projectName=$1
+fi
+
+mkdir $projectName  # creates root folder
+cd $projectName
+
+touch server.js     # creates application startup file (entry point)
+
+mkdir config controllers middleware models routes utils
+touch config/db.js
